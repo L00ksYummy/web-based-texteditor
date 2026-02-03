@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="screenContainer" class="screen-container">
+    <div id="buttonsContainer" class="buttons-container">
+        <div id="buttonBar" class="button-bar">
+            <button class="buttons" id="newFileButton">new</button>
+            <button class="buttons" id="openFileButton">open</button>
+            <button class="buttons" id="saveFileButton">save</button>
+            <button class="buttons" id="deleteFileButton">delete</button>
+        </div>
+    </div>
+
+    <div class="editor-container">
+        <div id="textEditor" class="text-editor" contenteditable="true"></div>
+    </div>
+</div>
+<script type="module" src="script.js"></script>
+</body>
+</html>

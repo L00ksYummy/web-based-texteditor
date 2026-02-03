@@ -1,0 +1,99 @@
+.screen-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.buttons{
+    background: black;
+    border: 2px solid black;
+    margin: 0;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: rgb(181, 181, 181);
+}
+.buttons-container{
+    width: 100%;
+    padding-left: 100px;
+}
+.buttons:hover{
+    color: black;
+    border: 2px solid black;
+    background: none;
+}
+.buttons:active{
+    border-color: black;
+    border: 2px solid rgb(68, 68, 68);
+    color: rgb(94, 94, 94);
+}
+
+.text-editor{
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
+
+    line-height: 1.5em;
+    font-size: 1.1rem;
+
+    border-style: solid;
+    border-radius: 10px;
+
+    background-color: rgb(165, 165, 165);
+    padding: 4px;
+    padding-left: 4rem;
+
+    scroll-behavior: auto;
+    white-space: pre;
+    overflow: scroll;
+
+    word-wrap: breakword;
+    word-break: break-all;
+
+    resize: none;
+}
+
+.texteditor div{
+    padding-left: 4rem;
+    position: relative;
+}
+
+.text-editor div::before{
+    counter-increment: line;
+    content: counter(line);
+    font-size: 1em;
+    user-select: none;
+    width: 4rem;
+    text-align: right;
+    left: 0;
+    position: absolute;
+}
+
+.text-editor:focus{
+    outline:none;
+}
+
+.editor-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 95%;
+    height: auto;
+    min-height: 97vh;
+    
+    overflow-y: auto;
+    counter-reset: line;
+
+    background-color: rgb(112, 112, 112);
+}
+
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(112, 112, 112);
+}

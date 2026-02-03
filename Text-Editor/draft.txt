@@ -1,0 +1,4 @@
+hello! this is some stuffingtons I am putting
+in here to see if the worker to DOM communication is working correctly
+But! there is a catch... (there always is). 
+I need to make sure the worker (hold up gotta check something)
